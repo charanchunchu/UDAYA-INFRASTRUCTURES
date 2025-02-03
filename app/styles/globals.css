@@ -1,0 +1,20 @@
+/* ...existing styles... */
+
+.page-enter {
+  opacity: 0;
+  transform: scale(0.95) translateY(20px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.page-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.95) translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
