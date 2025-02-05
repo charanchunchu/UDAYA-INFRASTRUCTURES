@@ -371,7 +371,7 @@ export default function Home() {
       </section>
       {/* Customization Section */}
       <section className="bg-gray-900">
-        <FadeIn>
+        {/* <FadeIn> */}
           <div className="relative py-24 min-h-screen flex items-center">
             <div className="container mx-auto px-4">
              <div className="text-center">
@@ -436,7 +436,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </FadeIn>
+        {/* </FadeIn> */}
       </section>
 
       { /* Projects Section */}

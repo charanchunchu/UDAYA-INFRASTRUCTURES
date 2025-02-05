@@ -1,11 +1,12 @@
 "use client"
 
 import Image from "next/image"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { CheckCircle } from "lucide-react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ImageGallery } from "@/components/gallery/image-gallery"
 import { FadeIn } from "@/components/animations/fade-in"
+import {fadeIn} from "../variants"
 
 const services = [
   {
@@ -34,14 +35,14 @@ const products = {
   windows: [
     {
       id: 1,
-      src: "https://via.placeholder.com/800x600?text=Window+1",
+      src: "/blue_half_window.jpg",
       alt: "Modern Window Design",
       title: "Premium Casement Window",
       description: "Energy-efficient casement window with triple-pane glass and advanced thermal insulation.",
     },
     {
       id: 2,
-      src: "https://via.placeholder.com/800x600?text=Window+2",
+      src: "/gray-window.jpg",
       alt: "Sliding Window",
       title: "Sliding Window",
       description: "Smooth sliding window with double-pane glass and secure locking mechanism.",
@@ -87,6 +88,64 @@ const products = {
       alt: "Tilt and Turn Window",
       title: "Tilt and Turn Window",
       description: "Versatile tilt and turn window with dual opening options for ventilation and cleaning.",
+    },
+  ],
+  interior: [
+    {
+      id: 1,
+      src: "/inter-1.jpg",
+      alt: "Luxury Door Design",
+      title: "Executive Entry Door",
+      description: "Solid hardwood entry door with reinforced security features and elegant finish.",
+    },
+    {
+      id: 2,
+      src: "/inter-2.jpg",
+      alt: "French Door",
+      title: "French Door",
+      description: "Stylish French door with double-pane glass and intricate detailing.",
+    },
+    {
+      id: 3,
+      src: "/inter-3.jpg",
+      alt: "Patio Door",
+      title: "Patio Door",
+      description: "Sliding patio door with energy-efficient glass and smooth operation.",
+    },
+    {
+      id: 4,
+      src: "/inter-4.jpg",
+      alt: "Barn Door",
+      title: "Barn Door",
+      description: "Rustic barn door with sliding mechanism and vintage hardware.",
+    },
+    {
+      id: 5,
+      src: "/inter-5.jpg",
+      alt: "Panel Door",
+      title: "Panel Door",
+      description: "Classic panel door with raised panels and durable construction.",
+    },
+    {
+      id: 6,
+      src: "/inter-6.jpg",
+      alt: "Bi-Fold Door",
+      title: "Bi-Fold Door",
+      description: "Space-saving bi-fold door with smooth folding action and modern design.",
+    },
+    {
+      id: 7,
+      src: "/inter-2.jpg",
+      alt: "Dutch Door",
+      title: "Dutch Door",
+      description: "Charming Dutch door with top and bottom halves that open independently.",
+    },
+    {
+      id: 8,
+      src: "/inter-8.jpg",
+      alt: "Storm Door",
+      title: "Storm Door",
+      description: "Durable storm door with full-view glass and protective screen.",
     },
   ],
   doors: [
@@ -271,8 +330,9 @@ const meshTypes = [
 export default function Services() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
-      <div className="container mx-auto px-4 py-16">
-        <FadeIn>
+      <AnimatePresence>
+      <div className="container-fluid mx-auto px-4 py-16">
+        <FadeIn >
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Our Products & Services</h1>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
             Discover our premium collection of windows and doors, backed by industry-leading warranty coverage.
@@ -287,36 +347,28 @@ export default function Services() {
             <TabsTrigger value="warranty">Warranty</TabsTrigger>
           </TabsList>
           <TabsContent value="windows">
-            <FadeIn >
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Premium Windows</h2>
                 <ImageGallery images={products.windows} columns={4} />
               </div>
-            </FadeIn>
           </TabsContent>
-          <TabsContent value="interior">
-            <FadeIn >
+          <TabsContent value="interior">             
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Interior Design</h2>
-                <ImageGallery images={products.windows} columns={4} />
+                <ImageGallery images={products.interior} columns={4} />
               </div>
-            </FadeIn>
           </TabsContent>
-          <TabsContent value="doors">
-            <FadeIn >
+          <TabsContent value="doors">             
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Luxury Doors</h2>
                 <ImageGallery images={products.doors} columns={4} />
               </div>
-            </FadeIn>
           </TabsContent>
           <TabsContent value="warranty">
-            <FadeIn >
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Warranty Information</h2>
                 <ImageGallery images={products.warranty} columns={4} />
               </div>
-            </FadeIn>
           </TabsContent>
         </Tabs>
         {/* <h1 className="text-4xl font-bold mb-8 text-center mt-12">Our Services</h1>
@@ -339,10 +391,10 @@ export default function Services() {
 
 {/* <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100"> */}
       {/* Glass Section */}
-      <section id="glass" className="relative py-20">
+      <section id="glass" className="relative py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <FadeIn >
+            <FadeIn key="section-1"  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IbIEfOIAimCL3uE3MQLoEmN0KNuWKE.png"
@@ -352,7 +404,7 @@ export default function Services() {
                 />
               </div>
             </FadeIn>
-            <FadeIn >
+            <FadeIn key="section-2" direction="down" delay={0.2} duration={0.8} amount={0.5}>
               <div>
                 <h2 className="text-4xl font-bold mb-6">Glass</h2>
                 <p className="text-gray-600 mb-8">
@@ -378,7 +430,7 @@ export default function Services() {
       <section id="laminate" className="relative py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div>
                 <h2 className="text-4xl font-bold mb-6">Lamination</h2>
                 <p className="text-gray-600 mb-8">
@@ -396,7 +448,7 @@ export default function Services() {
                 </div>
               </div>
             </FadeIn>
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mQGERipbUUvfacw5AoTfgNSdO2AHPo.png"
@@ -414,7 +466,7 @@ export default function Services() {
       <section id="colors" className="relative py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PkHOYm7rzDh2T33rddlGOcC7bElGmH.png"
@@ -424,7 +476,7 @@ export default function Services() {
                 />
               </div>
             </FadeIn>
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div>
                 <h2 className="text-4xl font-bold mb-6">Coloured Profile</h2>
                 <p className="text-gray-300 mb-8">
@@ -454,14 +506,14 @@ export default function Services() {
               for toughened glass.
             </p>
           </FadeIn>
-          <div className="relative h-[400px] mb-12">
+          {/* <div className="relative h-[400px] mb-12">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L0ibkzEdNejrAuxZ58REKnlodbpv5H.png"
               alt="Glazing Types"
               fill
               className="object-contain"
             />
-          </div>
+          </div> */}
           <div className="grid md:grid-cols-3 gap-8">
             {glazingTypes.map((type, index) => (
               <FadeIn key={type.title} delay={index * 0.1}>
@@ -479,7 +531,7 @@ export default function Services() {
       <section id="hardware" className="relative py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-I8BnOr1b4j6RNkwG8k54EzUtTrbVYW.png"
@@ -489,7 +541,7 @@ export default function Services() {
                 />
               </div>
             </FadeIn>
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div>
                 <h2 className="text-4xl font-bold mb-6">Mesh Options</h2>
                 <p className="text-gray-600 mb-8">
@@ -515,7 +567,7 @@ export default function Services() {
       <section id="mesh" className="relative py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div>
                 <h2 className="text-4xl font-bold mb-6">Grill</h2>
                 <p className="text-gray-600 mb-8">
@@ -525,7 +577,7 @@ export default function Services() {
                 </p>
               </div>
             </FadeIn>
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-k6tL9ZdrJw369NjSOPAbOZYvxcz2wx.png"
@@ -543,7 +595,7 @@ export default function Services() {
       <section className="relative py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-as4VeM89lSBUUSJr2pwTfZYAsqB4AE.png"
@@ -553,7 +605,7 @@ export default function Services() {
                 />
               </div>
             </FadeIn>
-            <FadeIn >
+             <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div>
                 <h2 className="text-4xl font-bold mb-6">Hardware Options</h2>
                 <p className="text-gray-300 mb-8">
@@ -566,8 +618,12 @@ export default function Services() {
         </div>
       </section>
     </div>
+    </AnimatePresence>
       </div>
     // </div>
   )
 }
 
+
+
+// motion.div variants={fadeIn("up", 0.1)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.7 }}
