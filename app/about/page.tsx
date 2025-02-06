@@ -51,7 +51,7 @@ export default function About() {
           <FadeIn >
             <div className="relative aspect-4/3 rounded-2xl overflow-hidden h-0 pb-[75%]">
               <Image
-                src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&h=600&q=80"
+                src="cover_1.jpg"
                 alt="Uday Infrastructure Team"
                 fill
                 className="object-cover"

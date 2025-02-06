@@ -15,14 +15,14 @@ const slides = [
     subtitle: "WINDOWS & DOORS",
     description:
       "Transforming homes with premium windows and doors. We bring light, style, and energy efficiency to every space.",
-    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?w=1200&h=800&q=80",
+    image: "/Klissa-Wood.jpg",
   },
   {
     id: 2,
     title: "MODERN",
     subtitle: "INTERIORS",
     description: "Elevate your living spaces with our contemporary interior solutions and expert craftsmanship.",
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=800&q=80",
+    image: "modern_interior",
   },
   {
     id: 3,

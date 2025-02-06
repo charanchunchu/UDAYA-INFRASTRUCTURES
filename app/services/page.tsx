@@ -35,56 +35,56 @@ const products = {
   windows: [
     {
       id: 1,
-      src: "/blue_half_window.jpg",
+      src: "/window_1.jpeg",
       alt: "Modern Window Design",
       title: "Premium Casement Window",
       description: "Energy-efficient casement window with triple-pane glass and advanced thermal insulation.",
     },
     {
       id: 2,
-      src: "/gray-window.jpg",
+      src: "/window_2.jpg",
       alt: "Sliding Window",
       title: "Sliding Window",
       description: "Smooth sliding window with double-pane glass and secure locking mechanism.",
     },
     {
       id: 3,
-      src: "https://via.placeholder.com/800x600?text=Window+3",
+      src: "window_3.jpeg",
       alt: "Bay Window",
       title: "Bay Window",
       description: "Elegant bay window with panoramic view and excellent ventilation.",
     },
     {
       id: 4,
-      src: "https://via.placeholder.com/800x600?text=Window+4",
+      src: "window_4",
       alt: "Awning Window",
       title: "Awning Window",
       description: "Weather-resistant awning window with top-hinged design for improved airflow.",
     },
     {
       id: 5,
-      src: "https://via.placeholder.com/800x600?text=Window+5",
+      src: "window_5.jpg",
       alt: "Picture Window",
       title: "Picture Window",
       description: "Large picture window with unobstructed views and high energy efficiency.",
     },
     {
       id: 6,
-      src: "https://via.placeholder.com/800x600?text=Window+6",
+      src: "window_6.webp",
       alt: "Double-Hung Window",
       title: "Double-Hung Window",
       description: "Classic double-hung window with easy tilt-in cleaning and enhanced security.",
     },
     {
       id: 7,
-      src: "https://via.placeholder.com/800x600?text=Window+7",
+      src: "window_7",
       alt: "Garden Window",
       title: "Garden Window",
       description: "Garden window with shelves for plants and flowers, bringing nature indoors.",
     },
     {
       id: 8,
-      src: "https://via.placeholder.com/800x600?text=Window+8",
+      src: "window_8",
       alt: "Tilt and Turn Window",
       title: "Tilt and Turn Window",
       description: "Versatile tilt and turn window with dual opening options for ventilation and cleaning.",
@@ -93,49 +93,49 @@ const products = {
   interior: [
     {
       id: 1,
-      src: "/inter-1.jpg",
+      src: "/interior_1",
       alt: "Luxury Door Design",
       title: "Executive Entry Door",
       description: "Solid hardwood entry door with reinforced security features and elegant finish.",
     },
     {
       id: 2,
-      src: "/inter-2.jpg",
+      src: "/interio_2.jpg",
       alt: "French Door",
       title: "French Door",
       description: "Stylish French door with double-pane glass and intricate detailing.",
     },
     {
       id: 3,
-      src: "/inter-3.jpg",
+      src: "/interior_3.jpg",
       alt: "Patio Door",
       title: "Patio Door",
       description: "Sliding patio door with energy-efficient glass and smooth operation.",
     },
     {
       id: 4,
-      src: "/inter-4.jpg",
+      src: "/interior_4",
       alt: "Barn Door",
       title: "Barn Door",
       description: "Rustic barn door with sliding mechanism and vintage hardware.",
     },
     {
       id: 5,
-      src: "/inter-5.jpg",
+      src: "/interior_9.png",
       alt: "Panel Door",
       title: "Panel Door",
       description: "Classic panel door with raised panels and durable construction.",
     },
     {
       id: 6,
-      src: "/inter-6.jpg",
+      src: "/interio_11.webp",
       alt: "Bi-Fold Door",
       title: "Bi-Fold Door",
       description: "Space-saving bi-fold door with smooth folding action and modern design.",
     },
     {
       id: 7,
-      src: "/inter-2.jpg",
+      src: "/interior_7",
       alt: "Dutch Door",
       title: "Dutch Door",
       description: "Charming Dutch door with top and bottom halves that open independently.",
@@ -151,56 +151,56 @@ const products = {
   doors: [
     {
       id: 1,
-      src: "/door.jpg",
+      src: "/door_1",
       alt: "Luxury Door Design",
       title: "Executive Entry Door",
       description: "Solid hardwood entry door with reinforced security features and elegant finish.",
     },
     {
       id: 2,
-      src: "/door2.jpg",
+      src: "/door_2.jpg",
       alt: "French Door",
       title: "French Door",
       description: "Stylish French door with double-pane glass and intricate detailing.",
     },
     {
       id: 3,
-      src: "/door3.jpg",
+      src: "/door_3.jpg",
       alt: "Patio Door",
       title: "Patio Door",
       description: "Sliding patio door with energy-efficient glass and smooth operation.",
     },
     {
       id: 4,
-      src: "/door4.jpg",
+      src: "/door_4",
       alt: "Barn Door",
       title: "Barn Door",
       description: "Rustic barn door with sliding mechanism and vintage hardware.",
     },
     {
       id: 5,
-      src: "/door4.jpg",
+      src: "/door_5.jpg",
       alt: "Panel Door",
       title: "Panel Door",
       description: "Classic panel door with raised panels and durable construction.",
     },
     {
       id: 6,
-      src: "/door3.jpg",
+      src: "/door_6.jpg",
       alt: "Bi-Fold Door",
       title: "Bi-Fold Door",
       description: "Space-saving bi-fold door with smooth folding action and modern design.",
     },
     {
       id: 7,
-      src: "/door2.jpg",
+      src: "/door_9.png",
       alt: "Dutch Door",
       title: "Dutch Door",
       description: "Charming Dutch door with top and bottom halves that open independently.",
     },
     {
       id: 8,
-      src: "/door.jpg",
+      src: "/door_8.jpg",
       alt: "Storm Door",
       title: "Storm Door",
       description: "Durable storm door with full-view glass and protective screen.",
@@ -209,56 +209,56 @@ const products = {
   warranty: [
     {
       id: 1,
-      src: "https://via.placeholder.com/800x600?text=Warranty+1",
+      src: "warent_certi.jpg",
       alt: "Warranty Certificate",
       title: "Lifetime Warranty",
       description: "Our comprehensive warranty covers all aspects of our products for complete peace of mind.",
     },
     {
       id: 2,
-      src: "https://via.placeholder.com/800x600?text=Warranty+2",
+      src: "warrent_loan.png",
       alt: "Warranty Document",
       title: "Extended Warranty",
       description: "Extended warranty options available for additional coverage and protection.",
     },
     {
       id: 3,
-      src: "https://via.placeholder.com/800x600?text=Warranty+3",
+      src: "warent_agree.jpg",
       alt: "Warranty Agreement",
       title: "Warranty Agreement",
       description: "Detailed warranty agreement outlining terms and conditions for product coverage.",
     },
     {
       id: 4,
-      src: "https://via.placeholder.com/800x600?text=Warranty+4",
+      src: "warrent_cards.png",
       alt: "Warranty Card",
       title: "Warranty Card",
       description: "Warranty card provided with each product for easy reference and claims.",
     },
     {
       id: 5,
-      src: "https://via.placeholder.com/800x600?text=Warranty+5",
+      src: "warrent_serv.jpg",
       alt: "Warranty Service",
       title: "Warranty Service",
       description: "Dedicated warranty service team available to assist with any issues or claims.",
     },
     {
       id: 6,
-      src: "https://via.placeholder.com/800x600?text=Warranty+6",
+      src: "warrent_support.jpg",
       alt: "Warranty Support",
       title: "Warranty Support",
       description: "Comprehensive support for all warranty-related inquiries and assistance.",
     },
     {
       id: 7,
-      src: "https://via.placeholder.com/800x600?text=Warranty+7",
+      src: "warrent_reg.jpg",
       alt: "Warranty Registration",
       title: "Warranty Registration",
       description: "Easy online warranty registration for quick and hassle-free coverage.",
     },
     {
       id: 8,
-      src: "https://via.placeholder.com/800x600?text=Warranty+8",
+      src: "warrent_app.jpg",
       alt: "Warranty Claim",
       title: "Warranty Claim",
       description: "Simple and efficient process for submitting warranty claims and receiving support.",
@@ -341,17 +341,12 @@ export default function Services() {
 
         <Tabs defaultValue="windows" className="w-full">
           <TabsList className="w-full max-w-md mx-auto grid grid-cols-4 mb-12">
-            <TabsTrigger value="windows">Windows</TabsTrigger>
             <TabsTrigger value="interior">Interior</TabsTrigger>
             <TabsTrigger value="doors">Doors</TabsTrigger>
+            <TabsTrigger value="windows">Windows</TabsTrigger>
             <TabsTrigger value="warranty">Warranty</TabsTrigger>
           </TabsList>
-          <TabsContent value="windows">
-              <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-3xl font-bold mb-6">Premium Windows</h2>
-                <ImageGallery images={products.windows} columns={4} />
-              </div>
-          </TabsContent>
+          
           <TabsContent value="interior">             
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Interior Design</h2>
@@ -362,6 +357,12 @@ export default function Services() {
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Luxury Doors</h2>
                 <ImageGallery images={products.doors} columns={4} />
+              </div>
+          </TabsContent>
+          <TabsContent value="windows">
+              <div className="bg-white rounded-2xl shadow-lg p-8">
+                <h2 className="text-3xl font-bold mb-6">Premium Windows</h2>
+                <ImageGallery images={products.windows} columns={4} />
               </div>
           </TabsContent>
           <TabsContent value="warranty">
