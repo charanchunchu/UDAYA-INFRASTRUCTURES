@@ -209,7 +209,7 @@ const products = {
   warranty: [
     {
       id: 1,
-      src: "warent_certi.jpg",
+      src: "warrenty_certificate.jpg",
       alt: "Warranty Certificate",
       title: "Lifetime Warranty",
       description: "Our comprehensive warranty covers all aspects of our products for complete peace of mind.",
@@ -258,7 +258,7 @@ const products = {
     },
     {
       id: 8,
-      src: "warrent_app.jpg",
+      src: "warrent_claim.jpg",
       alt: "Warranty Claim",
       title: "Warranty Claim",
       description: "Simple and efficient process for submitting warranty claims and receiving support.",
@@ -398,7 +398,7 @@ export default function Services() {
             <FadeIn key="section-1"  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IbIEfOIAimCL3uE3MQLoEmN0KNuWKE.png"
+                  src="glass_1"
                   alt="Glass Options"
                   fill
                   className="object-cover rounded-lg"
@@ -452,7 +452,7 @@ export default function Services() {
              <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mQGERipbUUvfacw5AoTfgNSdO2AHPo.png"
+                  src="lamination_1.jpg"
                   alt="Lamination Options"
                   fill
                   className="object-cover rounded-lg"
@@ -470,7 +470,7 @@ export default function Services() {
              <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PkHOYm7rzDh2T33rddlGOcC7bElGmH.png"
+                  src="color_img"
                   alt="Colored Profiles"
                   fill
                   className="object-cover rounded-lg"
@@ -535,7 +535,7 @@ export default function Services() {
              <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-I8BnOr1b4j6RNkwG8k54EzUtTrbVYW.png"
+                  src="wire_1.jpg"
                   alt="Mesh Options"
                   fill
                   className="object-cover rounded-lg"
@@ -581,7 +581,7 @@ export default function Services() {
              <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-k6tL9ZdrJw369NjSOPAbOZYvxcz2wx.png"
+                  src="grill_1.jpg"
                   alt="Grill Options"
                   fill
                   className="object-cover rounded-lg"
@@ -599,7 +599,7 @@ export default function Services() {
              <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div className="relative h-[400px]">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-as4VeM89lSBUUSJr2pwTfZYAsqB4AE.png"
+                  src="hardware_12.png"
                   alt="Hardware Options"
                   fill
                   className="object-cover rounded-lg"
