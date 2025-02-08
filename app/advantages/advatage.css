@@ -1,0 +1,35 @@
+.banner-color {
+    /* background-color: #00114d; */
+    padding: 100px 0;
+    color: white;
+  }
+  
+  .advantage-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .advantage-title {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    flex: 3;
+  }
+  
+  .advantage-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
