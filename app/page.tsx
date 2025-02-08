@@ -10,7 +10,7 @@ import Link from "next/link"
 import App from "./sliders/sliders"
 import { motion } from "framer-motion"
 import { fadeIn } from "./variants"
-import Advantage from "./advantages/advantage"
+import AdvantagesSection from "./advantages/advantage"
 
 const slides = [
   {
@@ -472,9 +472,11 @@ export default function Home() {
         </div>
       </section> */}
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-100">
-        <Advantage />
-      </section>
+      {/* <section className="py-0 bg-gray-900">
+      <div className="container mx-auto px-4">
+        <AdvantagesSection />
+        </div>
+      </section> */}
 
       <section className="py-20">
         <div className="container mx-auto px-4">

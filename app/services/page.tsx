@@ -339,7 +339,7 @@ export default function Services() {
           </p>
         </FadeIn>
 
-        <Tabs defaultValue="windows" className="w-full">
+        <Tabs defaultValue="interior" className="w-full">
           <TabsList className="w-full max-w-md mx-auto grid grid-cols-4 mb-12">
             <TabsTrigger value="interior">Interior</TabsTrigger>
             <TabsTrigger value="doors">Doors</TabsTrigger>

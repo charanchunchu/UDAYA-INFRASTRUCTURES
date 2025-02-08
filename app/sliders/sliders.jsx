@@ -36,8 +36,10 @@ export default function App() {
 
   return (
     <div className="slider-container bg-gray-100">
-       <h2 className="text-4xl font-bold text-center mb-4">Our Projects</h2>
-      <Swiper
+<h2 className="text-4xl text-black text-center font-bold mb-4 relative group inline-block">
+Our Projects
+                  <span className="absolute left-0 bottom-[-6px] h-1 w-20 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
+                </h2>      <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={3}
         centeredSlides={true}
