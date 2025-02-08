@@ -7,6 +7,9 @@ import { Card } from "@/components/ui/card"
 import Image from "next/image"
 import { FadeIn } from "@/components/animations/fade-in"
 import Link from "next/link"
+import App from "./sliders/sliders"
+import { motion } from "framer-motion"
+import { fadeIn } from "./variants"
 
 const slides = [
   {
@@ -250,7 +253,8 @@ export default function Home() {
 
           <div className="relative h-full">
             <div className="container mx-auto px-4 h-full flex items-center">
-              <div className="max-w-xl">
+              <motion.div variants={fadeIn("up", 0.1)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.7 }}
+              className="max-w-xl">
                 <h1 className="text-7xl font-bold mb-4 transition-all duration-500 transform">
                   <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text block">{slides[currentSlide].title}</span>
                   <span className="text-white">{slides[currentSlide].subtitle}</span>
@@ -258,7 +262,7 @@ export default function Home() {
                 <p className="text-gray-300 mb-8 text-lg transition-all duration-500">
                   {slides[currentSlide].description}
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
 
@@ -439,8 +443,12 @@ export default function Home() {
         {/* </FadeIn> */}
       </section>
 
-      { /* Projects Section */}
       <section className="py-20 bg-gray-100">
+        <App />
+      </section>
+
+      { /* Projects Section */}
+      {/* <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -461,7 +469,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Testimonials Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
