@@ -11,6 +11,15 @@ import App from "./sliders/sliders"
 import { motion } from "framer-motion"
 import { fadeIn } from "./variants"
 import AdvantagesSection from "./advantages/advantage"
+// import { WorldMapDemo } from "./franchise/franchise"
+
+import dynamic from "next/dynamic";
+// import { WorldMapDemo } from "@/components/franchise"
+
+const WorldMapDemo = dynamic(() => import("@/components/franchise/franchise"), {
+  ssr: false,
+  loading: () => <p className="text-center">Loading...</p>,
+});
 
 const slides = [
   {
@@ -478,7 +487,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -502,6 +511,10 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section> */}
+
+      <section className="py-20">
+        <WorldMapDemo />
       </section>
     </div>
   )

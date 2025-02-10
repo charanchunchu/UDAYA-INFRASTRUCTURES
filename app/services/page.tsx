@@ -7,6 +7,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ImageGallery } from "@/components/gallery/image-gallery"
 import { FadeIn } from "@/components/animations/fade-in"
 import {fadeIn} from "../variants"
+import { WobbleCardDemo } from "../WobbleCard/WobbleCard"
+import { LayoutGridDemo } from "../layoutgrid/layoutgrid"
 
 const services = [
   {
@@ -617,6 +619,12 @@ export default function Services() {
             </FadeIn>
           </div>
         </div>
+      </section>
+      <section>
+        <WobbleCardDemo />
+      </section>
+      <section>
+        <LayoutGridDemo />
       </section>
     </div>
     </AnimatePresence>
