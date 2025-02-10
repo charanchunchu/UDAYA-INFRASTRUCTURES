@@ -481,11 +481,11 @@ export default function Home() {
         </div>
       </section> */}
       {/* Testimonials Section */}
-      {/* <section className="py-0 bg-gray-900">
+      <section className="py-0 bg-gray-900">
       <div className="container mx-auto px-4">
         <AdvantagesSection />
         </div>
-      </section> */}
+      </section>
 
       {/* <section className="py-20">
         <div className="container mx-auto px-4">
