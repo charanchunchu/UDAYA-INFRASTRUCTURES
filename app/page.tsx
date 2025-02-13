@@ -14,6 +14,7 @@ import AdvantagesSection from "./advantages/advantage"
 // import { WorldMapDemo } from "./franchise/franchise"
 
 import dynamic from "next/dynamic";
+import FranchiseSection from "./franchise/franchise"
 // import { WorldMapDemo } from "@/components/franchise"
 
 const WorldMapDemo = dynamic(() => import("@/components/franchise/franchise"), {
@@ -481,11 +482,11 @@ export default function Home() {
         </div>
       </section> */}
       {/* Testimonials Section */}
-      <section className="py-0 bg-gray-900">
+      {/* <section className="py-0 bg-gray-900">
       <div className="container mx-auto px-4">
         <AdvantagesSection />
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="py-20">
         <div className="container mx-auto px-4">
@@ -513,9 +514,13 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="py-20">
+      <section className="py-20 bg-gray-100">
+        <FranchiseSection />
+        </section>
+
+      {/* <section className="py-20">
         <WorldMapDemo />
-      </section>
+      </section> */}
     </div>
   )
 }
