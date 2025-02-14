@@ -15,6 +15,7 @@ import AdvantagesSection from "./advantages/advantage"
 
 import dynamic from "next/dynamic";
 import FranchiseSection from "./franchise/franchise"
+import StickySections from "./StickySections"
 // import { WorldMapDemo } from "@/components/franchise"
 
 const WorldMapDemo = dynamic(() => import("@/components/franchise/franchise"), {
@@ -346,7 +347,8 @@ export default function Home() {
           <p className="text-4xl text-center mb-12">
             <span className="text-red-500">part of</span> <span className="text-purple-500">everything</span> we build.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          <StickySections />
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {values.map((value, index) => (
               <Card
                 key={index}
@@ -381,7 +383,7 @@ export default function Home() {
                 <p className="text-white-600 mb-4">{value.description}</p>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
       {/* Customization Section */}
@@ -514,7 +516,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="py-20 bg-gray-100">
+      <section className="bg-black text-white">
         <FranchiseSection />
         </section>
 
