@@ -15,14 +15,62 @@ import AdvantagesSection from "./advantages/advantage"
 
 import dynamic from "next/dynamic";
 import FranchiseSection from "./franchise/franchise"
-import StickySections from "./StickySections"
+import { StickyScrollRevealDemo } from "./StickyScrollReveal/StickyScrollReveal"
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal"
 // import { WorldMapDemo } from "@/components/franchise"
 
 const WorldMapDemo = dynamic(() => import("@/components/franchise/franchise"), {
   ssr: false,
   loading: () => <p className="text-center">Loading...</p>,
 });
-
+const content = [
+  {
+    title: "Collaborative Editing",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Collaborative Editing
+      </div>
+    ),
+  },
+  {
+    title: "Real time changes",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="/linear.webp"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Version control",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        Version control
+      </div>
+    ),
+  },
+  {
+    title: "Running out of content",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Running out of content
+      </div>
+    ),
+  },
+];
 const slides = [
   {
     id: 1,
@@ -174,35 +222,35 @@ const customizationOptions = [
     icon: "/colours.png",
     label: "Colours",
     position: { top: "20%", left: "20%" },
-    href: "/services#colors", 
+    href: "/services#colors",
   },
   {
     id: "glass",
     icon: "/glass.png",
     label: "Glass",
     position: { top: "40%", left: "30%" },
-    href: "/services#glass", 
+    href: "/services#glass",
   },
   {
     id: "hardware",
     icon: "/hardware.png",
     label: "Hardware",
     position: { top: "60%", left: "46%" },
-    href: "/services#hardware", 
+    href: "/services#hardware",
   },
   {
     id: "mesh",
     icon: "/mesh.png",
     label: "Mesh & Grill",
     position: { top: "40%", right: "30%" },
-    href: "/services#mesh", 
+    href: "/services#mesh",
   },
   {
     id: "laminate",
     icon: "/laminate.png",
     label: "Laminate",
     position: { top: "20%", right: "20%" },
-    href: "/services#laminate", 
+    href: "/services#laminate",
   },
 ];
 const windowColors = [
@@ -266,7 +314,7 @@ export default function Home() {
           <div className="relative h-full">
             <div className="container mx-auto px-4 h-full flex items-center">
               <motion.div variants={fadeIn("up", 0.1)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.7 }}
-              className="max-w-xl">
+                className="max-w-xl">
                 <h1 className="text-7xl font-bold mb-4 transition-all duration-500 transform">
                   <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text block">{slides[currentSlide].title}</span>
                   <span className="text-white">{slides[currentSlide].subtitle}</span>
@@ -341,14 +389,29 @@ export default function Home() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="bg-black">
+        <div className="p-20">
+          <div className="container mx-auto px-4 mb-12">
+            {/* <h2 className="text-4xl font-bold text-center mb-4 text-white">Our values are</h2> */}
+            <div className="text-center">
+              <h2 className="text-4xl text-white text-center font-bold mb-4 relative group inline-block">
+                Our values are
+                <span className="absolute left-0 bottom-[-6px] h-1 w-20 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
+              </h2>
+            </div>
+            <p className="text-4xl text-center mb-12">
+              <span className="text-red-500">part of</span> <span className="text-purple-500">everything we build.</span>
+            </p>
+          </div>
+          <StickyScroll content={content} />
+        </div>
+        {/* <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Our values are</h2>
           <p className="text-4xl text-center mb-12">
             <span className="text-red-500">part of</span> <span className="text-purple-500">everything</span> we build.
-          </p>
-          <StickySections />
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          </p> */}
+        {/* <StickyScrollRevealDemo /> */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {values.map((value, index) => (
               <Card
                 key={index}
@@ -384,53 +447,53 @@ export default function Home() {
               </Card>
             ))}
           </div> */}
-        </div>
+        {/* </div> */}
       </section>
       {/* Customization Section */}
       <section className="bg-gray-900">
         {/* <FadeIn> */}
-          <div className="relative py-24 min-h-screen flex items-center">
-            <div className="container mx-auto px-4">
-             <div className="text-center">
-             <h2 className="text-4xl text-white text-center font-bold mb-4 relative group inline-block">
-              Customization
-                  <span className="absolute left-0 bottom-[-6px] h-1 w-20 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
-                </h2>
-             </div>
-              <div className="relative flex justify-center min-h-[600px] mt-12">
-                {/* Central Window Image */}
-                <div className="relative w-[300px] h-[300px] transition-all duration-500 hover:scale-105">
-                  <img
-                    src={selectedColor.src}
-                    alt="Window Preview"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                {/* Customization Options */}
-                {customizationOptions.map((option) => (
-                  <Link key={option.id} href={option.href}>
-                    <div
-                      className="absolute cursor-pointer transform hover:scale-110 transition-transform"
-                      style={{
-                        ...option.position,
-                        zIndex: 5, // Adjusted z-index
-                      }}
-                    >
-                      <div>
-                        <img
-                          src={option.icon}
-                          alt={option.label}
-                          className="w-20 h-20 object-cover rounded-full z-10"
-                        />
-                      </div>
-                      <p className="text-white text-sm mt-2 text-center">
-                        {option.label}
-                      </p>
+        <div className="relative py-24 min-h-screen flex items-center">
+          <div className="container mx-auto px-4">
+            <div className="text-center">
+              <h2 className="text-4xl text-white text-center font-bold mb-4 relative group inline-block">
+                Customization
+                <span className="absolute left-0 bottom-[-6px] h-1 w-20 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
+              </h2>
+            </div>
+            <div className="relative flex justify-center min-h-[600px] mt-12">
+              {/* Central Window Image */}
+              <div className="relative w-[300px] h-[300px] transition-all duration-500 hover:scale-105">
+                <img
+                  src={selectedColor.src}
+                  alt="Window Preview"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              {/* Customization Options */}
+              {customizationOptions.map((option) => (
+                <Link key={option.id} href={option.href}>
+                  <div
+                    className="absolute cursor-pointer transform hover:scale-110 transition-transform"
+                    style={{
+                      ...option.position,
+                      zIndex: 5, // Adjusted z-index
+                    }}
+                  >
+                    <div>
+                      <img
+                        src={option.icon}
+                        alt={option.label}
+                        className="w-20 h-20 object-cover rounded-full z-10"
+                      />
                     </div>
-                  </Link>
-                ))}
-                {/* Color Selection */}
-                {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                    <p className="text-white text-sm mt-2 text-center">
+                      {option.label}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+              {/* Color Selection */}
+              {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm p-4 rounded-xl">
                   <div className="flex gap-4">
                     {windowColors.map((color) => (
                       <button
@@ -450,9 +513,9 @@ export default function Home() {
                     ))}
                   </div>
                 </div> */}
-              </div>
             </div>
           </div>
+        </div>
         {/* </FadeIn> */}
       </section>
 

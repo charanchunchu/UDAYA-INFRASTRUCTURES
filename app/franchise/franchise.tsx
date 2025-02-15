@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Building2, Rocket } from "lucide-react";
 import createGlobe from "cobe";
 import { motion } from "framer-motion";
+import Link from "next/link"
 
 export default function FranchiseSection() {
   const sectionRef = useRef(null);
@@ -39,6 +40,7 @@ export default function FranchiseSection() {
                   Franchise Opportunities
                 </span>
               </div>
+              <Link href="/contact">
               <div className="relative inline-block">
                 <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-spin-slow"></div>
                 <span className="relative inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-purple-600 ring-1 ring-purple-100 bg-gradient-to-r from-purple-50 to-pink-50">
@@ -46,7 +48,8 @@ export default function FranchiseSection() {
                   Rapid Growth
                 </span>
               </div>
-            </div>
+              </Link>
+              </div>
             {/* Animated Title */}
             <motion.h1
               key={isVisible ? "visible" : "hidden"} // Forces re-render on visibility change
@@ -59,9 +62,9 @@ export default function FranchiseSection() {
             </motion.h1>
           </div>
           {/* 12-Column Grid Layout */}
-          <div className="grid grid-cols-12 items-center gap-6">
+          {/* <div className="grid grid-cols-12 items-center gap-6"> */}
             {/* Left - 8 Columns for Text */}
-            <motion.div className="col-span-12 md:col-span-8 text-white px-20">
+            {/* <motion.div className="col-span-12 md:col-span-8 text-white px-20">
               {isVisible &&
                 text.split("").map((char, index) => (
                   <motion.span
@@ -74,14 +77,14 @@ export default function FranchiseSection() {
                     {char}
                   </motion.span>
                 ))}
-            </motion.div>
+            </motion.div> */}
             {/* Right - 4 Columns for Globe */}
-            <div className="col-span-12 md:col-span-4 flex justify-center">
+            {/* <div className="col-span-12 md:col-span-4 flex justify-center">
               <div className="w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px]">
                 <Globe className="w-full h-auto" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
