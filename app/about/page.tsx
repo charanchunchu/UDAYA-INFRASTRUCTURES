@@ -16,33 +16,69 @@ const stats = [
 const values = [
   {
     icon: Award,
-    title: "Excellence",
-    description: "We strive for excellence in every project we undertake.",
+    title: "Save Up to 30% on Energy Bills",
+    description: "Udaya Infrastructure's uPVC windows and doors provide excellent heat insulation, keeping your home cool in summer and warm in winter, reducing your power costs.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working together to achieve exceptional results.",
+    title: "Reduce Noise by Up to 40 dB",
+    description: "Udaya Infrastructure's uPVC windows and doors block outside noise, creating a quieter, more peaceful, and comfortable living space.",
   },
   {
     icon: Building,
-    title: "Innovation",
-    description: "Embracing new technologies and methodologies.",
+    title: "Optimal Heat Insulation",
+    description: "Our multi-chambered uPVC profiles with a double-seal mechanism provide excellent insulation, keeping interiors cool in summer and warm in winter, making your home more energy-efficient.",
   },
   {
     icon: Leaf,
-    title: "Sustainability",
-    description: "Committed to environmental responsibility.",
+    title: "Maximum Water Tightness",
+    description: "Udaya uPVC windows and doors are 100% leak-proof, ensuring no water seepage even in heavy rain, providing complete weather protection.",
+  },
+  {
+    icon: Award,
+    title: "Enhanced UV Protection & Profile Stability",
+    description: "Our double or triple-glazed glass reduces UV radiation, preventing furniture fading. The high-quality profiles resist warping, fading, and weather damage, ensuring long-lasting beauty.",
+  },
+  {
+    icon: Users,
+    title: "Superior Wind Resistance",
+    description: "Built to withstand high wind speeds and cyclonic conditions, our hurricane bar-reinforced profiles are perfect for high-rise buildings and coastal areas exposed to strong winds and corrosive environments.",
+  },
+  {
+    icon: Building,
+    title: "Fire Retardant",
+    description: "Made with specially formulated materials, Udaya uPVC windows and doors do not support combustion, offering extra safety and peace of mind.",
+  },
+  {
+    icon: Leaf,
+    title: "Eco-Friendly & Lead-Free",
+    description: "Our products are 100% recyclable, lead-free, and energy-efficient, making them a green choice for a sustainable future.",
+  },
+  {
+    icon: Award,
+    title: "Long-Lasting Durability",
+    description: "Udaya uPVC windows and doors are termite-proof, corrosion-resistant, and weatherproof, ensuring smooth performance and longevity for years to come.",
+  },
+  {
+    icon: Users,
+    title: "Minimal Maintenance",
+    description: "No need for frequent painting or repairs—just simple cleaning keeps them looking as good as new with very little upkeep.",
+  },
+  {
+    icon: Building,
+    title: "Professional Installation & Hassle Delivery",
+    description: "Our trained experts ensure a seamless installation with minimal disruption and no mess. We also provide on-time delivery, so you can enjoy your new windows and doors without delays.",
   },
 ]
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-black from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 py-16">
         <FadeIn>
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">About Uday Infrastructure</h1>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">About <span className="font-bold bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text">
+            UDAYA INFRASTRUCTURES</span></h1>
+          <p className="text-white-600 text-center max-w-2xl mx-auto mb-12">
             Building excellence through innovation and sustainability
           </p>
         </FadeIn>
@@ -51,7 +87,7 @@ export default function About() {
           <FadeIn >
             <div className="relative aspect-4/3 rounded-2xl overflow-hidden h-0 pb-[75%]">
               <Image
-                src="cover_1.jpg"
+                src="/about-banner-1.jpg"
                 alt="Uday Infrastructure Team"
                 fill
                 className="object-cover"
@@ -61,45 +97,45 @@ export default function About() {
 
           <FadeIn >
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold">Our Story</h2>
-              <p className="text-gray-600">
-                Founded in 2005, Uday Infrastructure has grown from a small local contractor to a leading name in the
-                infrastructure industry. Our journey has been marked by continuous innovation, unwavering commitment to
-                quality, and a deep understanding of our clients' needs.
+              <h2 className="text-3xl font-bold text-white">Our Story</h2>
+              <p className="text-white">
+                Founded in 2015 in Nizamabad, Telangana, Udaya Infrastructure has grown from a small local contractor into a trusted name in the infrastructure industry. Our journey has been built on innovation, quality, and a deep commitment to customer satisfaction.
               </p>
-              <p className="text-gray-600">
-                Today, we stand as a testament to excellence in infrastructure development, having successfully
-                completed numerous landmark projects that have transformed urban landscapes and improved communities.
+              <p className="text-white">
+                With years of experience, we have successfully delivered landmark projects that have transformed urban spaces and improved communities. Now, expanding our expertise, Udaya Architecture specializes in high-quality uPVC & WPC windows and doors, providing durable, stylish, and energy-efficient solutions for homes and businesses.
               </p>
-              <Button size="lg">Learn More</Button>
+              <p className="text-white">At Udaya, we believe in modern design, sustainability, and long-term reliability. Whether you're looking to upgrade your space or explore franchise opportunities, we are here to help you build a better, stronger, and more beautiful future.
+              </p>
+              {/* <Button size="lg">Learn More</Button> */}
             </div>
           </FadeIn>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 mb-20">
+        {/* <div className="grid md:grid-cols-4 gap-8 mb-20">
           {stats.map((stat, index) => (
             <FadeIn key={index}  delay={index * 0.1}>
               <motion.div className="bg-white rounded-xl p-6 text-center shadow-lg" whileHover={{ y: -5 }}>
                 <div className="text-4xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-black-600">{stat.label}</div>
               </motion.div>
             </FadeIn>
           ))}
-        </div>
+        </div> */}
 
         <FadeIn>
-          <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Advantages of Choosing <span className="font-bold text-4xl bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text">
+            UDAYA INFRASTRUCTURES</span></h2>
         </FadeIn>
 
         <div className="grid md:grid-cols-4 gap-8">
           {values.map((value, index) => (
-            <FadeIn key={index}  delay={index * 0.1}>
-              <motion.div className="bg-white rounded-xl p-6 text-center shadow-lg" whileHover={{ y: -5 }}>
+            <FadeIn key={index} delay={index * 0.1}>
+              <motion.div className="bg-white rounded-xl p-6 pb-10 text-center shadow-lg w-104 h-64" whileHover={{ y: -5 }}>
                 <div className="inline-block p-3 bg-gray-100 rounded-lg mb-4">
-                  <value.icon className="w-6 h-6 text-gray-600" />
+                  <value.icon className="w-6 h-6 text-black-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-black-600">{value.description}</p>
               </motion.div>
             </FadeIn>
           ))}

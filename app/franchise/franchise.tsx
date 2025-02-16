@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Building2, Rocket } from "lucide-react";
+import { Building2, Phone, Rocket } from "lucide-react";
 import createGlobe from "cobe";
 import { motion } from "framer-motion";
 import Link from "next/link"
@@ -44,8 +44,8 @@ export default function FranchiseSection() {
               <div className="relative inline-block">
                 <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-spin-slow"></div>
                 <span className="relative inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-purple-600 ring-1 ring-purple-100 bg-gradient-to-r from-purple-50 to-pink-50">
-                  <Rocket className="mr-2 h-4 w-4" />
-                  Rapid Growth
+                  <Phone className="mr-2 h-4 w-4" />
+                  Contact Us
                 </span>
               </div>
               </Link>
@@ -56,10 +56,11 @@ export default function FranchiseSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="mt-8 text-4xl py-10 font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+              className="mt-8 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
             >
-              Join Our Growing Network
+              Franchise with UDAYA INFRA
             </motion.h1>
+            <p className="mt-2">Looking to start your own business? Collaborate with us and become a franchise partner!</p>
           </div>
           {/* 12-Column Grid Layout */}
           {/* <div className="grid grid-cols-12 items-center gap-6"> */}

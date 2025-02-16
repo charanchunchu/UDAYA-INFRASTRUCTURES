@@ -25,48 +25,71 @@ const WorldMapDemo = dynamic(() => import("@/components/franchise/franchise"), {
 });
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "High Wall-Thickness",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "High Wall Thickness – Our uPVC and WPC products are built with extra wall thickness to ensure superior strength, durability, and resistance against harsh weather conditions, making them perfect for long-lasting use.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+        High Wall-Thickness
       </div>
     ),
   },
   {
-    title: "Real time changes",
+    title: "Multi Chambered",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "The advanced multi-chambered structure enhances thermal insulation and soundproofing, keeping your home quieter and more energy-efficient while reducing electricity costs.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src="/linear.webp"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
+      // <div className="h-full w-full  flex items-center justify-center text-white">
+      //   <Image
+      //     src="/linear.webp"
+      //     width={300}
+      //     height={300}
+      //     className="h-full w-full object-cover"
+      //     alt="linear board demo"
+      //   />
+      // </div>
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+       Multi Chambered
       </div>
     ),
   },
   {
-    title: "Version control",
+    title: "7-Parts of Titanium",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Engineered with 7 parts of titanium, our uPVC profiles offer exceptional stability and durability, preventing warping or bending over time.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+        7-Parts of Titanium
       </div>
     ),
   },
   {
-    title: "Running out of content",
+    title: "RoHS Certified",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Our materials are free from hazardous substances and meet strict safety and environmental standards, ensuring a healthier living environment.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+        RoHS Certified
+      </div>
+    ),
+  },
+  {
+    title: "24/7 Quality Monitoring",
+    description:
+      "We maintain continuous quality checks at every stage of production to guarantee the highest level of precision, strength, and reliability in our products.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        24/7 Quality Monitoring
+      </div>
+    ),
+  },
+  {
+    title: "100% Recyclable, Lead-Free",
+    description:
+      "Our commitment to sustainability ensures that all our uPVC and WPC products are lead-free and fully recyclable, contributing to a greener and healthier future for the planet.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        100% Recyclable, Lead-Free
       </div>
     ),
   },
@@ -76,31 +99,44 @@ const slides = [
     id: 1,
     title: "UDAY",
     subtitle: "WINDOWS & DOORS",
-    description:
-      "Transforming homes with premium windows and doors. We bring light, style, and energy efficiency to every space.",
-    image: "/Klissa-Wood.jpg",
+    description:"Upgrade your home with high-quality windows and doors. Enjoy more natural light, stylish designs, and improved energy efficiency in every room.",
+    image: "/1674035125_banner.webp",
   },
   {
     id: 2,
     title: "MODERN",
     subtitle: "INTERIORS",
-    description: "Elevate your living spaces with our contemporary interior solutions and expert craftsmanship.",
-    image: "modern_interior",
+    description: "Transform your home with stylish, expertly crafted interiors designed for comfort and elegance.",
+    image: "/stylish-luxury-modern-kitchen-designs.jpg",
   },
+  // {
+  //   id: 2,
+  //   title: "UDAYA",
+  //   subtitle: "DOORS",
+  //   description: "Elevate your living spaces with our contemporary interior solutions and expert craftsmanship.",
+  //   image: "/1674035125_banner.webp",
+  // },
   {
     id: 3,
     title: "MODERN",
     subtitle: "ARCHITECTURE",
-    description: "Exploring the heights of modern architectural marvels. Where innovation meets design excellence.",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&h=800&q=80",
+    description: "Experience cutting-edge design where innovation meets style, creating timeless architectural beauty.",
+    image: "bulidings.jpg",
   },
   {
     id: 4,
-    title: "LIFETIME",
-    subtitle: "WARRANTY",
-    description: "We stand behind our products with comprehensive warranty coverage for your peace of mind.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=800&q=80",
+    title: "WARRANTY",
+    subtitle: "",
+    description: "Enjoy long-term reliability with our high-quality, warranty-backed products.",
+    image: "/Warranty.jpg",
   },
+  // {
+  //   id: 5,
+  //   title: "UDAYA",
+  //   subtitle: "INFRASTRUCTURES",
+  //   description: "We stand behind our products with comprehensive warranty coverage for your peace of mind.",
+  //   image: "/customization-banner.jpg",
+  // },
 ]
 const values = [
   {
@@ -363,7 +399,7 @@ export default function Home() {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <Image
-                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&q=80"
+                  src="/about.jpeg"
                   alt="Our Approach"
                   width={800}
                   height={600}
@@ -372,14 +408,11 @@ export default function Home() {
               </div>
               <div className="md:w-1/2 p-8 md:p-12">
                 <h2 className="text-3xl font-bold mb-4 relative group inline-block">
-                  Our Approach
+                  About Us
                   <span className="absolute left-0 bottom-[-6px] h-1 w-10 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
                 </h2>
                 <p className="text-white-600 mb-6">
-                  At Uday Infrastructure, we believe in a holistic approach to urban development. Our team of experts
-                  combines innovative design, sustainable practices, and cutting-edge technology to create
-                  infrastructure that not only meets the needs of today but is also prepared for the challenges of
-                  tomorrow.
+                At Udaya Infrastructure, we specialize in high-quality uPVC and WPC solutions that enhance homes and buildings. Our expert team focuses on modern design, durability, and sustainability to create doors and windows that are stylish, energy-efficient, and long-lasting. With advanced technology and eco-friendly materials, we ensure our products meet today’s needs while being ready for the future.
                 </p>
                 <Button size="lg">Learn More</Button>
               </div>
@@ -395,12 +428,13 @@ export default function Home() {
             {/* <h2 className="text-4xl font-bold text-center mb-4 text-white">Our values are</h2> */}
             <div className="text-center">
               <h2 className="text-4xl text-white text-center font-bold mb-4 relative group inline-block">
-                Our values are
-                <span className="absolute left-0 bottom-[-6px] h-1 w-20 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
+              Advantages of
+              <span className="absolute left-0 bottom-[-6px] h-1 w-20 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
               </h2>
             </div>
-            <p className="text-4xl text-center mb-12">
-              <span className="text-red-500">part of</span> <span className="text-purple-500">everything we build.</span>
+            <p className="text-4xl text-center mb-12 mt-2">
+            <span className="font-bold bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text">
+            UDAYA INFRASTRUCTURES</span>
             </p>
           </div>
           <StickyScroll content={content} />
@@ -464,7 +498,7 @@ export default function Home() {
               {/* Central Window Image */}
               <div className="relative w-[300px] h-[300px] transition-all duration-500 hover:scale-105">
                 <img
-                  src={selectedColor.src}
+                  src="/ezgif.com-webp-to-gif-converter.gif"
                   alt="Window Preview"
                   className="w-full h-full object-contain"
                 />

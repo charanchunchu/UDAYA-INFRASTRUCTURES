@@ -12,12 +12,12 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    description: "123 Infrastructure Lane, Cityville, State 12345",
+    description: "UDAYA INFRASTRUCTURE, Mubharak Nagar, Mubaraknagar, Nizamabad - 503003 (Beside RBVRR School)",
   },
   {
     icon: Phone,
     title: "Call Us",
-    description: "(123) 456-7890",
+    description: "+91-97018028077, +91-9700919166",
   },
   {
     icon: Mail,
@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Business Hours",
-    description: "Mon-Fri: 9AM-6PM",
+    description: "Mon-Sat: 9AM-6PM",
   },
 ]
 
@@ -63,7 +63,7 @@ export default function Contact() {
         <FadeIn>
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 mt-16">Get in Touch</h1>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            Have a question or ready to start your project? We're here to help!
+          We're here to help! Whether you're looking for uPVC & WPC windows and doors, professional installation, franchise opportunities, or expert guidance, reach out to us today.
           </p>
         </FadeIn>
 
@@ -99,7 +99,7 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold mb-6">Map Location</h2>
                 <div className="aspect-video rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645564749428!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3779.085970135858!2d78.11991247335695!3d18.704968863519255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUDAYA%20INFRASTRUCTURE%2C%20Mubharak%20Nagar%2C%20Mubaraknagar%2C%20Nizamabad%20-%20503003%20(Beside%20RBVRR%20School)!5e0!3m2!1sen!2sin!4v1739725770861!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

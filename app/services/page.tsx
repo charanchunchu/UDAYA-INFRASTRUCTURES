@@ -37,59 +37,59 @@ const products = {
   windows: [
     {
       id: 1,
-      src: "/window_1.jpeg",
+      src: "/windows1.jpg",
       alt: "Modern Window Design",
-      title: "Premium Casement Window",
-      description: "Energy-efficient casement window with triple-pane glass and advanced thermal insulation.",
+      title: "Casement Windows",
+      description: "Classic outward or inward opening windows",
     },
     {
       id: 2,
-      src: "/window_2.jpg",
+      src: "/windows2.jpg",
       alt: "Sliding Window",
       title: "Sliding Window",
-      description: "Smooth sliding window with double-pane glass and secure locking mechanism.",
+      description: "Smooth-gliding horizontal windows",
     },
     {
       id: 3,
       src: "window_3.jpeg",
       alt: "Bay Window",
       title: "Bay Window",
-      description: "Elegant bay window with panoramic view and excellent ventilation.",
+      description: "Extended outward projection for a stylish look.",
     },
     {
       id: 4,
-      src: "window_4",
+      src: "/windows4.jpg",
       alt: "Awning Window",
       title: "Awning Window",
-      description: "Weather-resistant awning window with top-hinged design for improved airflow.",
+      description: "Top-hinged for better airflow.",
     },
     {
       id: 5,
-      src: "window_5.jpg",
-      alt: "Picture Window",
-      title: "Picture Window",
-      description: "Large picture window with unobstructed views and high energy efficiency.",
+      src: "/windows5.jpg",
+      alt: "Fixed Window",
+      title: "Fixed Window",
+      description: "Non-operable windows for enhanced aesthetics.",
     },
     {
       id: 6,
-      src: "window_6.webp",
-      alt: "Double-Hung Window",
-      title: "Double-Hung Window",
-      description: "Classic double-hung window with easy tilt-in cleaning and enhanced security.",
+      src: "/windows6.jpg",
+      alt: "Arch Windows",
+      title: "Arch Windows",
+      description: "Stylish curved windows for unique designs.",
     },
     {
       id: 7,
-      src: "window_7",
-      alt: "Garden Window",
-      title: "Garden Window",
-      description: "Garden window with shelves for plants and flowers, bringing nature indoors.",
+      src: "/windows7.webp",
+      alt: "French Window",
+      title: "French Window",
+      description: "Elegant double-door style windows.",
     },
     {
       id: 8,
-      src: "window_8",
+      src: "/windows8.jpg",
       alt: "Tilt and Turn Window",
       title: "Tilt and Turn Window",
-      description: "Versatile tilt and turn window with dual opening options for ventilation and cleaning.",
+      description: "Versatile windows with dual opening options",
     },
   ],
   interior: [
@@ -153,140 +153,140 @@ const products = {
   doors: [
     {
       id: 1,
-      src: "/door_1",
-      alt: "Luxury Door Design",
-      title: "Executive Entry Door",
-      description: "Solid hardwood entry door with reinforced security features and elegant finish.",
+      src: "/doors1.webp",
+      alt: "sliding doors",
+      title: "sliding doors",
+      description: "Space-saving doors with smooth movement.",
     },
     {
       id: 2,
-      src: "/door_2.jpg",
-      alt: "French Door",
-      title: "French Door",
-      description: "Stylish French door with double-pane glass and intricate detailing.",
+      src: "/doors2.webp",
+      alt: "Slide and Fold Door",
+      title: "Slide and Fold Door",
+      description: "A modern space-saving door that smoothly folds and slides, offering a seamless transition between spaces.",
     },
     {
       id: 3,
-      src: "/door_3.jpg",
-      alt: "Patio Door",
-      title: "Patio Door",
-      description: "Sliding patio door with energy-efficient glass and smooth operation.",
+      src: "/doors3.webp",
+      alt: "French doors",
+      title: "French doors",
+      description: "Double-leaf doors for a sophisticated look.",
     },
     {
       id: 4,
-      src: "/door_4",
-      alt: "Barn Door",
-      title: "Barn Door",
-      description: "Rustic barn door with sliding mechanism and vintage hardware.",
+      src: "/doors4.avif",
+      alt: "Bi-Fold Doors",
+      title: "Bi-Fold Doors",
+      description: " Foldable panels for a wide opening.",
     },
     {
       id: 5,
-      src: "/door_5.jpg",
-      alt: "Panel Door",
-      title: "Panel Door",
-      description: "Classic panel door with raised panels and durable construction.",
+      src: "/doors5.jpg",
+      alt: "Lift & Slide Doors",
+      title: "Lift & Slide Doors",
+      description: "Advanced sliding mechanism for large spaces.",
     },
     {
       id: 6,
-      src: "/door_6.jpg",
-      alt: "Bi-Fold Door",
-      title: "Bi-Fold Door",
-      description: "Space-saving bi-fold door with smooth folding action and modern design.",
+      src: "/doors6.jpg",
+      alt: "Patio Doors",
+      title: "Patio Doors",
+      description: "Large glass doors for outdoor connections.",
     },
     {
       id: 7,
-      src: "/door_9.png",
-      alt: "Dutch Door",
-      title: "Dutch Door",
-      description: "Charming Dutch door with top and bottom halves that open independently.",
+      src: "/doors7.jpg",
+      alt: "Main Entrance Doors",
+      title: "Main Entrance Doors",
+      description: "Stylish and secure entryway solutions.",
     },
     {
       id: 8,
-      src: "/door_8.jpg",
-      alt: "Storm Door",
-      title: "Storm Door",
-      description: "Durable storm door with full-view glass and protective screen.",
+      src: "/doors8.jpg",
+      alt: "Soundproof Doors",
+      title: "Soundproof Doors",
+      description: "Specially designed doors with noise-reducing insulation, ensuring privacy and a quieter indoor environment.",
     },
   ],
-  warranty: [
-    {
-      id: 1,
-      src: "warrenty_certificate.jpg",
-      alt: "Warranty Certificate",
-      title: "Lifetime Warranty",
-      description: "Our comprehensive warranty covers all aspects of our products for complete peace of mind.",
-    },
-    {
-      id: 2,
-      src: "warrent_loan.png",
-      alt: "Warranty Document",
-      title: "Extended Warranty",
-      description: "Extended warranty options available for additional coverage and protection.",
-    },
-    {
-      id: 3,
-      src: "warent_agree.jpg",
-      alt: "Warranty Agreement",
-      title: "Warranty Agreement",
-      description: "Detailed warranty agreement outlining terms and conditions for product coverage.",
-    },
-    {
-      id: 4,
-      src: "warrent_cards.png",
-      alt: "Warranty Card",
-      title: "Warranty Card",
-      description: "Warranty card provided with each product for easy reference and claims.",
-    },
-    {
-      id: 5,
-      src: "warrent_serv.jpg",
-      alt: "Warranty Service",
-      title: "Warranty Service",
-      description: "Dedicated warranty service team available to assist with any issues or claims.",
-    },
-    {
-      id: 6,
-      src: "warrent_support.jpg",
-      alt: "Warranty Support",
-      title: "Warranty Support",
-      description: "Comprehensive support for all warranty-related inquiries and assistance.",
-    },
-    {
-      id: 7,
-      src: "warrent_reg.jpg",
-      alt: "Warranty Registration",
-      title: "Warranty Registration",
-      description: "Easy online warranty registration for quick and hassle-free coverage.",
-    },
-    {
-      id: 8,
-      src: "warrent_claim.jpg",
-      alt: "Warranty Claim",
-      title: "Warranty Claim",
-      description: "Simple and efficient process for submitting warranty claims and receiving support.",
-    },
-  ],
+  // warranty: [
+  //   {
+  //     id: 1,
+  //     src: "warrenty_certificate.jpg",
+  //     alt: "Warranty Certificate",
+  //     title: "Lifetime Warranty",
+  //     description: "Our comprehensive warranty covers all aspects of our products for complete peace of mind.",
+  //   },
+  //   {
+  //     id: 2,
+  //     src: "warrent_loan.png",
+  //     alt: "Warranty Document",
+  //     title: "Extended Warranty",
+  //     description: "Extended warranty options available for additional coverage and protection.",
+  //   },
+  //   {
+  //     id: 3,
+  //     src: "warent_agree.jpg",
+  //     alt: "Warranty Agreement",
+  //     title: "Warranty Agreement",
+  //     description: "Detailed warranty agreement outlining terms and conditions for product coverage.",
+  //   },
+  //   {
+  //     id: 4,
+  //     src: "warrent_cards.png",
+  //     alt: "Warranty Card",
+  //     title: "Warranty Card",
+  //     description: "Warranty card provided with each product for easy reference and claims.",
+  //   },
+  //   {
+  //     id: 5,
+  //     src: "warrent_serv.jpg",
+  //     alt: "Warranty Service",
+  //     title: "Warranty Service",
+  //     description: "Dedicated warranty service team available to assist with any issues or claims.",
+  //   },
+  //   {
+  //     id: 6,
+  //     src: "warrent_support.jpg",
+  //     alt: "Warranty Support",
+  //     title: "Warranty Support",
+  //     description: "Comprehensive support for all warranty-related inquiries and assistance.",
+  //   },
+  //   {
+  //     id: 7,
+  //     src: "warrent_reg.jpg",
+  //     alt: "Warranty Registration",
+  //     title: "Warranty Registration",
+  //     description: "Easy online warranty registration for quick and hassle-free coverage.",
+  //   },
+  //   {
+  //     id: 8,
+  //     src: "warrent_claim.jpg",
+  //     alt: "Warranty Claim",
+  //     title: "Warranty Claim",
+  //     description: "Simple and efficient process for submitting warranty claims and receiving support.",
+  //   },
+  // ],
 }
 
 const glassTypes = [
   {
     name: "Tinted Glass",
-    description: "Filter sunlight with tinted glass",
+    description: "Reduce glare and filter sunlight while maintaining a stylish look.",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     name: "Laminated Glass",
-    description: "Enhanced security with laminated glass",
+    description: "Ensure enhanced security with impact-resistant, durable glass.",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     name: "Clear Glass",
-    description: "Soak in great views with clear glass",
+    description: "Enjoy uninterrupted, crystal-clear views for a bright and open feel.",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     name: "Frosted Glass",
-    description: "Enhanced privacy with frosted glass",
+    description: "Achieve superior privacy without compromising on aesthetics.",
     image: "/placeholder.svg?height=100&width=100",
   },
 ]
@@ -341,18 +341,17 @@ export default function Services() {
           </p>
         </FadeIn>
 
-        <Tabs defaultValue="interior" className="w-full">
-          <TabsList className="w-full max-w-md mx-auto grid grid-cols-4 mb-12">
-            <TabsTrigger value="interior">Interior</TabsTrigger>
+        <Tabs defaultValue="windows" className="w-full">
+          <TabsList className="w-full max-w-md mx-auto grid grid-cols-3 mb-12">
+          <TabsTrigger value="windows">Windows</TabsTrigger>
             <TabsTrigger value="doors">Doors</TabsTrigger>
-            <TabsTrigger value="windows">Windows</TabsTrigger>
-            <TabsTrigger value="warranty">Warranty</TabsTrigger>
-          </TabsList>
-          
-          <TabsContent value="interior">             
+            <TabsTrigger value="interior">Interior</TabsTrigger>
+            {/* <TabsTrigger value="warranty">Warranty</TabsTrigger> */}
+          </TabsList>          
+          <TabsContent value="windows">
               <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-3xl font-bold mb-6">Interior Design</h2>
-                <ImageGallery images={products.interior} columns={4} />
+                <h2 className="text-3xl font-bold mb-6">Premium Windows</h2>
+                <ImageGallery images={products.windows} columns={4} />
               </div>
           </TabsContent>
           <TabsContent value="doors">             
@@ -360,19 +359,19 @@ export default function Services() {
                 <h2 className="text-3xl font-bold mb-6">Luxury Doors</h2>
                 <ImageGallery images={products.doors} columns={4} />
               </div>
-          </TabsContent>
-          <TabsContent value="windows">
+          </TabsContent>         
+          <TabsContent value="interior">             
               <div className="bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-3xl font-bold mb-6">Premium Windows</h2>
-                <ImageGallery images={products.windows} columns={4} />
+                <h2 className="text-3xl font-bold mb-6">Interior Design</h2>
+                <ImageGallery images={products.interior} columns={4} />
               </div>
           </TabsContent>
-          <TabsContent value="warranty">
+          {/* <TabsContent value="warranty">
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold mb-6">Warranty Information</h2>
                 <ImageGallery images={products.warranty} columns={4} />
               </div>
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
         {/* <h1 className="text-4xl font-bold mb-8 text-center mt-12">Our Services</h1>
         <div className="grid md:grid-cols-2 gap-8">
@@ -409,17 +408,15 @@ export default function Services() {
             </FadeIn>
             <FadeIn key="section-2" direction="down" delay={0.2} duration={0.8} amount={0.5}>
               <div>
-                <h2 className="text-4xl font-bold mb-6">Glass</h2>
-                <p className="text-gray-600 mb-8">
-                  Offer your customers a wide choice of glass. Filter sunlight with tinted glass, soak in great views
-                  with clear glass, get the benefit of enhanced security with laminated glass. If some customers prefer
-                  enhanced privacy, they can opt for frosted glass.
+                <h2 className="text-4xl font-bold mb-6">Glass Options – Style, Security & Comfort</h2>
+                <p className="text-black-600 mb-8">
+                At Udaya Doors, we offer a wide range of premium glass options to suit your needs. Whether you're looking for sunlight control, enhanced security, breathtaking views, or added privacy, we have the perfect solution for you.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   {glassTypes.map((type) => (
                     <motion.div key={type.name} className="p-4 bg-white rounded-lg shadow-md" whileHover={{ y: -5 }}>
-                      <h3 className="font-semibold mb-2">{type.name}</h3>
-                      <p className="text-sm text-gray-600">{type.description}</p>
+                      <h3 className="font-semibold text-black mb-2">{type.name}</h3>
+                      <p className="text-sm text-black">{type.description}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -437,9 +434,7 @@ export default function Services() {
               <div>
                 <h2 className="text-4xl font-bold mb-6">Lamination</h2>
                 <p className="text-gray-600 mb-8">
-                  As an Okotech fabricator-partner, you can offer customers a range of lamination & texture options,
-                  including natural wood finish in Golden Oak, Walnut, Rustic Oak, Dark Oak or Mahogany. Or simply an
-                  elegant white.
+                At Udaya Doors, we offer a wide range of customization options to enhance the aesthetics, security, and functionality of your spaces.
                 </p>
                 <div className="grid grid-cols-3 gap-4">
                   {woodFinishes.map((finish) => (
@@ -483,9 +478,7 @@ export default function Services() {
               <div>
                 <h2 className="text-4xl font-bold mb-6">Coloured Profile</h2>
                 <p className="text-gray-300 mb-8">
-                  Customers can choose the colours they want. Enhancing the look of their home and office spaces. They
-                  can also opt for windows and doors with one colour on the inside, and a totally different one for the
-                  outside.
+                Personalize your uPVC windows and doors with bold and stylish colors to match your interior and exterior themes.
                 </p>
                 <div className="grid grid-cols-3 gap-6">
                   <div className="p-4 bg-black rounded-lg">Bold-Black</div>
@@ -504,9 +497,7 @@ export default function Services() {
           <FadeIn>
             <h2 className="text-4xl font-bold mb-6 text-center">Glazing Types</h2>
             <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-              Your customers can choose between single, double or triple glazed glass units for the Ökotech uPVC windows
-              and doors you will fabricate. Deliver on thermal efficiency, and for increased security, customers can opt
-              for toughened glass.
+            Choose between single, double, or triple-glazed glass units for Udaya Doors uPVC windows and doors. Enhance thermal efficiency and for added security, opt for toughened glass.
             </p>
           </FadeIn>
           {/* <div className="relative h-[400px] mb-12">
@@ -548,9 +539,7 @@ export default function Services() {
               <div>
                 <h2 className="text-4xl font-bold mb-6">Mesh Options</h2>
                 <p className="text-gray-600 mb-8">
-                  Fiberglass, stainless steel or pet-resistant — Ökotech uPVC window and door profiles are designed to
-                  suit multiple mesh options to keep mosquitoes and other insects away without obstructing views or
-                  blocking ventilation.
+                Choose from fiberglass, stainless steel, or pet-resistant mesh for Udaya Doors uPVC windows and doors. Keep mosquitoes and insects out while maintaining clear views and proper ventilation.
                 </p>
                 <div className="space-y-6">
                   {meshTypes.map((type) => (
@@ -572,11 +561,9 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
              <FadeIn  direction="up" delay={0.2} duration={0.8} amount={0.5}>
               <div>
-                <h2 className="text-4xl font-bold mb-6">Grill</h2>
+                <h2 className="text-4xl font-bold mb-6">Grill Options</h2>
                 <p className="text-gray-600 mb-8">
-                  Offer clients customized grills. Enhancing not only the aesthetics of the Okotechu PVC windows and
-                  doors, but the entire façade of the structure. Give customers the choice of fixing the grills onUPVC
-                  window frame itself, or follow the traditional installation system.
+                Enhance both security and aesthetics with customized grills from Udaya Doors. Choose between grills fixed directly onto the uPVC window frame or the traditional installation system to complement your space.
                 </p>
               </div>
             </FadeIn>
@@ -612,20 +599,19 @@ export default function Services() {
               <div>
                 <h2 className="text-4xl font-bold mb-6">Hardware Options</h2>
                 <p className="text-gray-300 mb-8">
-                  Offer customers customization of not just the profile, colour, texture and glass, but give them the
-                  options of picking the hardware that they want on their Ökotech windows and doors.
+                Customize every detail of your windows and doors with Udaya Doors' premium hardware options. Select from a range of handles, locks, hinges, and multi-point locking systems to match your style and security needs.
                 </p>
               </div>
             </FadeIn>
           </div>
         </div>
       </section>
-      <section>
+      <section className="py-20">
         <WobbleCardDemo />
       </section>
-      <section>
+      {/* <section>
         <LayoutGridDemo />
-      </section>
+      </section> */}
     </div>
     </AnimatePresence>
       </div>
