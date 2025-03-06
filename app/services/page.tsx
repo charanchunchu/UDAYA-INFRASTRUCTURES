@@ -302,19 +302,23 @@ const woodFinishes = [
 const glazingTypes = [
   {
     title: "Single Glazing",
-    description: "Single glazing includes just one single layer of glass.",
+    description: "Single glazing includes just one single layer of glass. with an air space left in between the two for better thermal performance.",
+    image: "/doubleglazing.png",
   },
   {
     title: "Double Glazing",
     description:
       "In double glazing, two layers of glass are sealed together with an air space left in between the two for better thermal performance.",
+    image: "/singleglazing.png",
   },
   {
     title: "Triple Glazing",
     description:
       "Triple glazing refers to three layers of glass sealed together with an air space left in between the three layers for better thermal performance.",
+    image: "/tripleglazing.png",
   },
-]
+];
+
 
 const meshTypes = [
   {
@@ -508,16 +512,21 @@ export default function Services() {
               className="object-contain"
             />
           </div> */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {glazingTypes.map((type, index) => (
-              <FadeIn key={type.title} delay={index * 0.1}>
-                <motion.div className="bg-white p-6 rounded-lg shadow-lg" whileHover={{ y: -5 }}>
-                  <h3 className="text-xl font-bold mb-4">{type.title}</h3>
-                  <p className="text-gray-600">{type.description}</p>
-                </motion.div>
-              </FadeIn>
-            ))}
-          </div>
+         <div className="flex justify-center space-x-16 py-10">
+  {glazingTypes.map((type, index) => (
+    <FadeIn key={type.title} delay={index * 0.1}>
+      <motion.div className="flex items-center space-x-4" whileHover={{ y: -5 }}>
+        <img src={type.image} alt={type.title} className="w-32 h-auto" />
+        <div>
+          <h3 className="text-lg font-bold">{type.title}</h3>
+          <p className="text-gray-600">{type.description}</p>
+        </div>
+      </motion.div>
+    </FadeIn>
+  ))}
+</div>
+
+
         </div>
       </section>
 
@@ -606,9 +615,19 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="py-20">
+      {/* <section className="py-20">
         <WobbleCardDemo />
-      </section>
+      </section> */}
+     <section className="py-20 flex justify-center items-center">
+     <h2 className="text-4xl bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text text-center font-bold mb-4 relative group inline-block">
+     Applications
+                <span className="absolute left-0 bottom-[-6px] h-1 w-20 bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 transition-all duration-300 group-hover:w-full"></span>
+              </h2>
+  <div className="container flex justify-center">
+    <img src="/villa-window-app-pic.jpg" alt="Villa Window" className="mx-auto" />
+  </div>
+</section>
+
       {/* <section>
         <LayoutGridDemo />
       </section> */}

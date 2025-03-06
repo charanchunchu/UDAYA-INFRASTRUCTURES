@@ -1,3 +1,3 @@
-"# UDAYA-INFRASTRUCTURES" 
+"# UDAYA-INFRASTRUCTURE" 
 
 "npm run dev"

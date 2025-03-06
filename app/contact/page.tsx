@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    description: "UDAYA INFRASTRUCTURE, Mubharak Nagar, Mubaraknagar, Nizamabad - 503003 (Beside RBVRR School)",
+    description: "UDAYA INFRASTRUCTURE, Mubharak Nagar, Nizamabad - 503003 (Beside RBVRR School)",
   },
   {
     icon: Phone,

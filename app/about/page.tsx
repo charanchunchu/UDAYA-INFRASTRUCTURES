@@ -67,7 +67,12 @@ const values = [
   {
     icon: Building,
     title: "Professional Installation & Hassle Delivery",
-    description: "Our trained experts ensure a seamless installation with minimal disruption and no mess. We also provide on-time delivery, so you can enjoy your new windows and doors without delays.",
+    description: "Our trained experts ensure a seamless installation with minimal disruption and no mess. We also provide on-time delivery",
+  },
+  {
+    icon: Award,
+    title: "WARRANTY",
+    description: "We provide a warranty based on our products and business policies. For further warranty details, please check with our team. We ensure great warranty offers on all our products.",
   },
 ]
 
@@ -77,7 +82,7 @@ export default function About() {
       <div className="container mx-auto px-4 py-16">
         <FadeIn>
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">About <span className="font-bold bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text">
-            UDAYA INFRASTRUCTURES</span></h1>
+            UDAYA INFRASTRUCTURE</span></h1>
           <p className="text-white-600 text-center max-w-2xl mx-auto mb-12">
             Building excellence through innovation and sustainability
           </p>
@@ -124,7 +129,7 @@ export default function About() {
 
         <FadeIn>
           <h2 className="text-3xl font-bold text-center mb-12 text-white">Advantages of Choosing <span className="font-bold text-4xl bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text">
-            UDAYA INFRASTRUCTURES</span></h2>
+            UDAYA INFRASTRUCTURE</span></h2>
         </FadeIn>
 
         <div className="grid md:grid-cols-4 gap-8">

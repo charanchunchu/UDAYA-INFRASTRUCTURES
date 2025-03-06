@@ -17,6 +17,7 @@ import dynamic from "next/dynamic";
 import FranchiseSection from "./franchise/franchise"
 import { StickyScrollRevealDemo } from "./StickyScrollReveal/StickyScrollReveal"
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal"
+import { ThreeDCardDemo } from "./our_products_card/page"
 // import { WorldMapDemo } from "@/components/franchise"
 
 const WorldMapDemo = dynamic(() => import("@/components/franchise/franchise"), {
@@ -125,15 +126,15 @@ const slides = [
   },
   {
     id: 4,
-    title: "WARRANTY",
+    title: "",
     subtitle: "",
-    description: "Enjoy long-term reliability with our high-quality, warranty-backed products.",
+    description: "",
     image: "/Warranty.jpg",
   },
   // {
   //   id: 5,
   //   title: "UDAYA",
-  //   subtitle: "INFRASTRUCTURES",
+  //   subtitle: "INFRASTRUCTURE",
   //   description: "We stand behind our products with comprehensive warranty coverage for your peace of mind.",
   //   image: "/customization-banner.jpg",
   // },
@@ -434,7 +435,7 @@ export default function Home() {
             </div>
             <p className="text-4xl text-center mb-12 mt-2">
             <span className="font-bold bg-gradient-to-r from-orange-600 via-orange-500 to-pink-600 text-transparent bg-clip-text">
-            UDAYA INFRASTRUCTURES</span>
+            UDAYA INFRASTRUCTURE</span>
             </p>
           </div>
           <StickyScroll content={content} />
@@ -554,7 +555,7 @@ export default function Home() {
       </section>
 
       <section className="py-20 bg-gray-100">
-        <App />
+        <ThreeDCardDemo />
       </section>
 
       { /* Projects Section */}
